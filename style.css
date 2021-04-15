@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 70% 20%;
+    height: 100vh;
+    background-image: url(background1.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.content{
+    grid-column: 2/3;
+    grid-row:2;
+    display: block;
+    justify-content: left;
+    align-items: left;
+    margin: auto;
+    height: auto;
+}
+.header{
+    color: white;
+    font-family: 'Kufam', cursive;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 100px;
+}
+.content-p{
+    width: 40%;
+    color: white;
+    font-family: 'Kufam', cursive;
+    font-weight: 600;
+    font-size: 50px;
+    text-shadow: 1.5px 1.5px 1.5px black;
+}
+
+.button{
+    background-color: #81796D;
+    height: 60px;
+    width: 20%;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer{
+    grid-column: 2;
+    grid-row:3;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    bottom: 0;
+    opacity: 1;
+    justify-content: center;
+}
+.photo p{
+    color: white;
+    opacity: 1;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+}
+
+.photo img{
+    height: 80%;
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+.photo img:hover{
+    opacity: 1;
+    animation: example ;
+    animation-duration: 2s;
+    height: 80%;
+    
+}
+
+@keyframes example{
+    25%{
+        transform: rotate(20deg);
+
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.left-container{
+    height: 100vh;
+}
+
+.dots{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.dots p{
+    margin: auto;
+    padding: 20px;
+    
+}
+.test{
+    opacity: 0.5;
+}
+.icon-left{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:solid #D6D6D6;
+    cursor: pointer;
+}
+
+.menu{
+    height: 10vh;
+    border-bottom: solid #D6D6D6;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+.right-container{
+    height: 100vh;
+    border-left: solid #D6D6D6;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.icons p{
+    margin: auto;
+    padding: 20px;
+}
+
+.icons img{
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.icon-right{
+    height: 10vh;
+    border-bottom: solid #D6D6D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-right img{
+    cursor: pointer;
+}
+
+.menu nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    padding-left: 30%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+}
+
+.menu nav ul{
+    cursor: pointer;
+}
+
+.menu nav ul:hover{
+    border-bottom:solid white;
+    
+
+}
+
+@media(max-width: 1050px){
+    .dots2 p img{
+        height: 15px;
+        width: 15px;
+    }
+
+    .header{
+        font-size: 70px;
+    }
+
+    .content-p{
+        font-size: 50px;
+    }
+
+    .button{
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .icons img{
+        width: 30px;
+    }
+
+    .menu{
+        font-size: 12px;
+    }
+
+    .photo img{
+        height: 60%;
+    }
+
+    .photo p{
+        font-size: 22px;
+        margin: none;
+    }
+
+    .footer{
+        margin-right: 10px;
+    }
+}
+
+
+
+@media(max-width: 800px){
+    .menu nav{
+        width: 100%;   
+    }
+    .menu{
+
+        width: 100%;
+    }
+
+    .menu nav ul{
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .dots2 p img{
+        height: 10px;
+        width: 10px;
+    }
+
+    .header{
+        font-size: 50px;
+    }
+
+    .content-p{
+        font-size: 30px;
+    }
+
+    .left-icon{
+        height: 30px;
+    }
+}
